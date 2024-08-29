@@ -1,0 +1,23 @@
+.features-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .features-page h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .features-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features-page li {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  

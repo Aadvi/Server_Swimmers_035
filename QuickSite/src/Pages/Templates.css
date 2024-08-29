@@ -1,0 +1,35 @@
+.templates-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .templates-page h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .template-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .template-card {
+    width: 150px;
+    height: 100px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .template-card:hover {
+    transform: scale(1.05);
+  }
+  
