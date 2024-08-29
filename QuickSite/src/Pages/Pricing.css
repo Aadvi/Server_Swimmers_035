@@ -1,0 +1,45 @@
+.pricing-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pricing-page h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .pricing-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .pricing-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pricing-card li {
+    padding: 5px 0;
+  }
+  
