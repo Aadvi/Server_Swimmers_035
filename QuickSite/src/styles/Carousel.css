@@ -1,0 +1,36 @@
+/* src/components/styles/Carousel.css */
+.carousel-container {
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+    margin: auto;
+    position: relative;
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    padding: 20px; /* Optional: Add padding between slides */
+  }
+  
+  .carousel-slide img {
+    width: 90%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Optional: Add border radius to images */
+  }
+  
+  .slick-dots {
+    bottom: 10px;
+  }
+  
+  .slick-dots li button:before {
+    color: #fff;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    color: #fff;
+  }
+  
