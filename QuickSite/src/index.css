@@ -1,0 +1,30 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+}
+
+/* Ensure the app container takes full height */
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for GrapesJS container */
+#gjs {
+  border: 1px solid #ddd; /* Light border for the editor */
+  background-color: #fff; /* White background for the editor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Optional: Adjustments for Chakra UI components */
+.chakra-ui-dark {
+  background-color: #f0f4f8; /* Background color for Chakra UI dark mode */
+}
+
+.chakra-ui-light {
+  background-color: #ffffff; /* Background color for Chakra UI light mode */
+}
