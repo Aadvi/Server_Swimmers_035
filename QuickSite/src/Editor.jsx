@@ -26,6 +26,7 @@ const Editor = () => {
     });
     setEditor(editor);
   }, []);
+
   return (
     <div className="App">
       <div id="editor"></div>
