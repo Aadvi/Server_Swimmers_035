@@ -1,14 +1,14 @@
 import React from "react";
-import { Box, Flex, Button, useDisclosure, Image, Container } from "@chakra-ui/react";
+import { Box, Flex, Button, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import icon from "../assets/Quick.png";
 import { Link } from "react-router-dom";
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 const MotionBox = motion(Box);
 
 const Navbar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
 
   return (
     <MotionBox
@@ -25,28 +25,49 @@ const Navbar = () => {
       boxShadow="md"
     >
       <Flex justify="space-between" align="center">
-        <Image src={icon} />
+        <Image src={icon} alt="Quick" />
 
-        <Flex>
+        <Flex align="center">
           <Link to="/editor">
-            <Button
-              mr={4}
-              colorScheme="teal"
-              variant="outline"
-              onClick={onOpen}
-            >
+            <Button mr={4} colorScheme="teal" variant="outline" >
               Studio
             </Button>
           </Link>
-          <Button colorScheme="teal" variant="outline">
-            Sign Up
-          </Button>
-          <Button ml={4} colorScheme="teal" variant="outline">
-            Login
-          </Button>
+
+          {isAuthenticated ? (
+            <>
+              <Text mr={4}>Hi, {user.name}!</Text>
+              <Button
+                ml={4}
+                colorScheme="teal"
+                variant="outline"
+                onClick={() => logout({ returnTo: window.location.origin })}
+              >
+                Logout
+              </Button>
+            </>
+          ) : (
+            <>
+              <Button
+                ml={4}
+                colorScheme="teal"
+                variant="outline"
+                onClick={() => loginWithRedirect()}
+              >
+                Login
+              </Button>
+              <Button
+                ml={4}
+                colorScheme="teal"
+                variant="outline"
+                onClick={() => loginWithRedirect()}
+              >
+                Sign Up
+              </Button>
+            </>
+          )}
         </Flex>
       </Flex>
-      
     </MotionBox>
   );
 };
