@@ -11,7 +11,11 @@ Welcome to Quicksite! This platform empowers users to design and personalize the
 - **Personalization Options**: Tailor your website with custom colors, fonts, and layouts.
 - **Template Selection**: Start with a pre-designed template and modify it to fit your needs.
 - **Secure Authentication**: Enjoy a safe and secure login experience with Auth0.
-
+## Project Images
+![image](https://github.com/Aadvi/Server_Swimmers_035/blob/main/QuickSite/src/assets/Screenshot%20(69).png)
+![image](https://github.com/Aadvi/Server_Swimmers_035/blob/main/QuickSite/src/assets/Screenshot%20(70).png)
+![image](https://github.com/Aadvi/Server_Swimmers_035/blob/main/QuickSite/src/assets/Screenshot%20(71).png)
+![image](https://github.com/Aadvi/Server_Swimmers_035/blob/main/QuickSite/src/assets/Screenshot%20(72).png)
 ### Technology Stack
 
 - **HTML**
