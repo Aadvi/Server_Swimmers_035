@@ -44,7 +44,7 @@ const Form = () => {
       setIsValid(true); // Reset validation state on successful submission
       const token = await getAccessTokenSilently();
       const response = await axios.post(
-        "http://localhost:5000/api/pages",
+        "http://localhost:5001/api/pages",
         {
           name,
           slug: name.toLowerCase().replace(/ /g, "-"),
